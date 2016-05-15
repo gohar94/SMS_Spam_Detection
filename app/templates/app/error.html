@@ -1,0 +1,10 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<p>Sorry, your request failed. Please try again by clicking <a href="{% url 'home' %}">here</a>.</p>
+
+{% endblock %}

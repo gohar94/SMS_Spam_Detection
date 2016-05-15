@@ -1,0 +1,16 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+
+<br/>
+<h4>Potential large-scale uses</h4>
+<p class="text-primary">This app can help in detecting if an SMS/Whatsapp message is spam or not. It can be used to consume messages in smartphones before sending the user a notification so that spam messages don't caause disturbance and don't show up in the inbox.<br/><br/></p>
+<h4>Overview</h4>
+<p class="text-warning">A classifier has been trained using a dataset (available <a href="http://goharirfan.me/sms">here</a>) which predicts whether a given SMS message is spam or not based on what it has learnt from the annotated dataset.<br/>
+The dataset has room for improvement and catering to many more cases; this has been left as future work.<br/><br/></p>
+<h4>Technologies Used</h4>
+<p class="text-success">This classifier that powers this app has been built using the <a href="https://azure.microsoft.com/en-us/services/machine-learning/">Microsoft Azure Machine Learning API</a>.<br/><br/></p>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+{% block content %}
+
+<form method='POST' action='/predict/'> {% csrf_token %}
+  <h1>SMS Spam Detection</h1>
+  <fieldset>
+    <legend>Check if an SMS is spam or not!</legend>
+    <label for="sms_body">SMS:</label>
+    <input class="form-control input-lg" type="text" id="sms_body" name="sms_body">
+  </fieldset>
+  <br/>
+  <button type="submit">Detect</button>
+</form>
+
+{% endblock %}
+  {% block scripts %}
+  {% load staticfiles %}
+  <script src="{% static 'app/scripts/jquery.validate.min.js' %}"></script>
+{% endblock %}

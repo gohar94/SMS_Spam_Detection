@@ -1,0 +1,23 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+{% if label == "positive" %}
+	<h4 class="text-danger">This SMS is SPAM.</h4>
+{% else %}
+	<h4 class="text-success">This SMS is NOT SPAM.</h4>
+{% endif %}
+
+<h5>Score = {{ score }}</h5>
+<p class="text-info">The score indicates where this SMS lies on a scale of 0 (NOT SPAM) to 1 (SPAM).</p>
+
+<br/>
+
+<p><b>The SMS you tested was: </b><br/>{{ sms_body }}<br/><br/>
+Check another SMS by clicking <a href="{% url 'home' %}">here</a>.
+</p>
+
+{% endblock %}

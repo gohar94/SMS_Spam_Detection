@@ -1,2 +1,2 @@
 ## SMS Spam Detection
-Uses a Machine Learning model created on Microsoft Azure Machine Learning API
+Uses a Machine Learning model created with Microsoft Azure Machine Learning API

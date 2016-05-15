@@ -88,12 +88,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = (
-#     ('assets', 'C:\Users\Muhammad Sohaib\Desktop\webservice\static'),
-# )
+STATICFILES_DIRS = (
+    ('assets', os.path.join(BASE_DIR, 'webservice/static')),
+)
 
-# TEMPLATE_DIRS = (
-#     os.path.join(BASE_DIR,  'templates'),
-# )
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR,  'templates'),
+)
 
-STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+# STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
